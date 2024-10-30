@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+}
+
+/* ------- Profile Image ------- */
+
+.img-wrapper {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper::after {
+  content: "";
+  background-color: rgb(60, 198, 232);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: shockwave 2s infinite;
+}
+
+.img-wrapper > .image {
+  width: calc(300px - 25px);
+  height: calc(300px - 25px);
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 99;
+}
+
+/* Shockwave animation */
+@keyframes shockwave {
+  0% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.25;
+  }
+}
