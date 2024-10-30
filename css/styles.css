@@ -108,3 +108,45 @@ p {
     opacity: 0.25;
   }
 }
+
+/* ------- Lists ------- */
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list__item {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+.list-shape .list__item {
+  padding-left: 38px;
+}
+
+.list-shape .list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.list-shape--computer .list__item::before {
+  background-image: url("../assets/icon-computer.png");
+}
+
+@media screen and (min-width: 1024px) {
+  .list-shape .list__item {
+    padding-left: 33px;
+  }
+
+  .list-shape .list__item::before {
+    width: 20px;
+    height: 20px;
+  }
+}
