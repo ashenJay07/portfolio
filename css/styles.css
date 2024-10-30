@@ -221,7 +221,7 @@ h3 {
 /* ------ Hero ------- */
 
 .hero {
-  min-height: 150vh;
+  min-height: calc(100vh + 250px);
   display: flex;
   justify-content: center;
   flex-direction: column;
