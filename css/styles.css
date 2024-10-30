@@ -80,16 +80,16 @@ p {
 
 .img-wrapper::after {
   content: "";
-  background-color: rgb(60, 198, 232);
+  background-color: rgb(112, 204, 226);
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   animation: shockwave 2s infinite;
 }
 
 .img-wrapper > .image {
-  width: calc(300px - 25px);
-  height: calc(300px - 25px);
+  width: calc(250px - 25px);
+  height: calc(250px - 25px);
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
@@ -187,5 +187,72 @@ h3 {
   .grid-container h2,
   h3 {
     margin: 0;
+  }
+}
+
+/*  */
+
+.curve-container {
+  min-height: calc(100vh + 175px);
+  background-color: black;
+  color: white;
+  position: relative;
+  margin-bottom: 1000px;
+}
+
+.custom-shape-divider-bottom-1730283645 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+}
+
+.custom-shape-divider-bottom-1730283645 .shape-fill {
+  fill: #ffffff;
+}
+
+/* 
+
+
+*/
+
+/* ------ Hero ------- */
+
+.hero {
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.hero h1 {
+  color: #2e846a;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.hero .keywords {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 425px) {
+  .hero p {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+    max-width: 950px;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
